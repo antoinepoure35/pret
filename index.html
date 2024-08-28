@@ -9,7 +9,23 @@
 <body>
     <h1>Gestion de Prêts</h1>
 	<form id="loanForm">
-        <input type="text" id="item" placeholder="Objet" required>
+		<select id="dropdown">
+			<option value="" disabled selected>Veuillez choisir un objet ou l'indiquer ci dessous</option>
+            <option value="Verbo Ser - Presente">Verbo Ser - Presente</option>
+            <option value="Verbo Tener - Presente">Verbo Tener - Presente</option>
+            <option value="Verbo Cantar - Presente">Verbo Cantar - Presente</option>
+			<option value="Verbo Comer - Presente">Verbo Comer - Presente</option>
+			<option value="Verbo Vivir - Presente">Verbo Vivir - Presente</option>
+			<option value="Verbo Poder - Presente">Verbo Poder - Presente</option>
+			<option value="Verbo Ir - Presente">Verbo Ir - Presente</option>
+            <option value="Verbo Ser - Pretérito">Verbo Ser - Pretérito</option>
+            <option value="Verbo Tener - Pretérito">Verbo Tener - Pretérito</option>
+            <option value="Verbo Cantar - Pretérito">Verbo Cantar - Pretérito</option>
+			<option value="Verbo Comer - Pretérito">Verbo Comer - Pretérito</option>
+			<option value="Verbo Vivir - Pretérito">Verbo Vivir - Pretérito</option>
+        </select>
+		<input type="text" id="item" placeholder="Objet (facultatif)">
+		<input type="text" id="classe" placeholder="Classe (facultatif)">
         <input type="text" id="person" placeholder="Personne" required>
         <button type="submit">Ajouter</button>
     </form>
