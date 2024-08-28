@@ -10,6 +10,7 @@ h1 {
 }
 
 #loanList {
+	margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -21,7 +22,7 @@ h1 {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    display: flex;
+    display: flow;
     justify-content: space-between;
     align-items: center;
 }
@@ -32,6 +33,7 @@ h1 {
 }
 
 .loan-item button {
+	margin-top: 10px;
     background-color: #f44336;
     color: white;
     border: none;
@@ -64,4 +66,12 @@ form button {
 
 form button:hover {
     background-color: #45a049;
+}
+
+.deleteBtn {
+    display: block; /* Pour que le bouton prenne toute la largeur disponible */
+    margin: 0 auto; /* Centre le bouton horizontalement */
+    position: absolute; /* Permet de positionner le bouton indépendamment du texte */
+    left: 50%; /* Positionne le bouton au centre horizontalement */
+    transform: translate(100px, -55px); /* Ajuste pour que le bouton soit parfaitement centré */
 }
