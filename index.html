@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prêts</title>
+    <title>Gestion de Prêts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +11,8 @@
 	<form id="loanForm">
 		<select id="dropdown">
 			<option value="" disabled selected>Veuillez choisir un objet ou l'indiquer ci dessous</option>
+            <option value="Pronombres personales">Pronombres personales</option>
+            <option value="Verbo Llamarse - Presente">Verbo Llamarse - Presente</option>
             <option value="Verbo Ser - Presente">Verbo Ser - Presente</option>
             <option value="Verbo Tener - Presente">Verbo Tener - Presente</option>
             <option value="Verbo Cantar - Presente">Verbo Cantar - Presente</option>
@@ -32,6 +34,7 @@
     <div id="loanList">
         <!-- Les étiquettes seront ajoutées ici dynamiquement -->
     </div>
+	<p id="localStorageSize">Taille du local Storage : 0 Mo</p>
     <script src="script.js"></script>
 </body>
 </html>
