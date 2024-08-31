@@ -76,6 +76,7 @@ function saveLoans() {
         });
     }
     localStorage.setItem('loans', JSON.stringify(loans));
+	displayLocalStorageSize();
 }
 
 function loadLoans() {
@@ -84,4 +85,21 @@ function loadLoans() {
     loans.forEach(loan => {
         addLoan(loan.item, loan.dateTime, loan.person, loan.classe);
     });
+	displayLocalStorageSize();
+}
+
+function getLocalStorageSizeInMB() {
+    let total = 0;
+    for (let key in localStorage) {
+        if (localStorage.hasOwnProperty(key)) {
+            total += ((localStorage[key].length + key.length) * 2);
+        }
+    }
+    // Convertir les octets en mégaoctets
+    return (total / (1024 * 1024)).toFixed(2);
+}
+
+function displayLocalStorageSize() {
+    const size = getLocalStorageSizeInMB();
+    document.getElementById('localStorageSize').innerText = `Taille du local Storage : ${size} Mo`;
 }
